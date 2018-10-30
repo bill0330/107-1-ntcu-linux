@@ -6,7 +6,7 @@
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-3/ACS107137/img/1-1.2.PNG?raw=true)</br>
 ## 請刪除系統中的 examuser3 這個帳號，同時將這個帳號的家目錄與郵件檔案同步刪除。</br>
 用"userdel -r (username)"刪除使用者的家目錄及資料</br>
-**注意:**沒有加上-r家目錄不會刪除</br>
+**注意:** 沒有加上-r家目錄不會刪除</br>
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-3/ACS107137/img/1-2.1.PNG?raw=true)</br>
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-3/ACS107137/img/1-2.2.PNG?raw=true)</br> 
 ## examuser1 不小心被管理員刪除了，但是這個帳號的家目錄與相關郵件都還存在。請參考這個帳號可能的家目錄所保留的 UID 與 GID， 並嘗試以該帳號原有的 UID/GID 資訊來重建該帳號</br>
