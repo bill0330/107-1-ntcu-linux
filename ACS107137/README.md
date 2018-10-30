@@ -38,7 +38,7 @@ drwxr-xr-x  root root /dev/shm/unit05/dir3/</br>
 -rw-rw-rw-  root root /dev/shm/unit05/dir3/file3 (複製來自 /etc/hosts)</br>
 drwxrwxrwx  root root /dev/shm/unit05/dir4/</br>
 -rw-------  root root /dev/shm/unit05/dir4/file4 (複製來自 /etc/hosts)</br>
-</br></br>
+</br>
 用"mkdir"建立資料夾，"touch"建立檔案，"cp"複製，"chmod"修改權限</br>
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-3/ACS107137/img/3-1.1.PNG?raw=true)</br>
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-3/ACS107137/img/3-1.2.PNG?raw=true)</br>
