@@ -37,7 +37,7 @@
 接下來請點選"系統"裡的"網路與主機名稱",因為預設是關的,因此要記得打開,完成後就可以開始安裝了</br>
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-2/ACS107137/img/17.PNG?raw=true)</br>
 進入安裝畫面後要記得設置"使用者"與"ROOT"的帳密,安裝和設定都完成後就可以重新開機了</br>
-![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-2/ACS107137/img/81.PNG?raw=true)</br>
+![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-2/ACS107137/img/18.PNG?raw=true)</br>
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-2/ACS107137/img/19.PNG?raw=true)</br>
 重新開機後,輸入使用者帳密,並"df"指令檢視是否有剛剛設置的分割區</br>
 如果有就代表你完成了!</br>
