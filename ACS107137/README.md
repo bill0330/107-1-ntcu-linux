@@ -7,6 +7,6 @@
 - 打籃球</br>
 - 打排球</br>
 - 轉魔方</br>
-![image](https://stickershop.line-scdn.net/stickershop/v1/product/1303972/LINEStorePC/main@2x.png;compress=true?__=20161019)</br>
+![image](https://stickershop.line-scdn.net/stickershop/v1/product/1303972/LINEStorePC/main@2x.png)</br>
 </br>
 ## 請大家多多指教
