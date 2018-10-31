@@ -1,10 +1,55 @@
 ﻿# 107(1) UNIX應用實務
 
+*公告:* 
+
+請同學至[作業成績](https://github.com/ogre0403/107-1-ntcu-linux/tree/score)確認自己的作業成績，若HW-1沒有成績(0分)，請至[HW-1 分支](https://github.com/ogre0403/107-1-ntcu-linux/tree/HW-1)確認是否有你的作業，若HW-2沒有成績，請至[HW-2分支](https://github.com/ogre0403/107-1-ntcu-linux/tree/HW-2)確認是否有你的作業，之後的作業依此類推。有些同學作業送到錯分支，一樣以0分記，請重新送一次。
+
+## HW5: Deadline: 2018/11/6 23:59
+
+*注意:* 請依[Git繳交作業流程](#Git繳交作業流程), 唯一不同處是作業2用HW-2的地方在作業5改用HW-5分支
+
+*注意:* 以Markdown 格式 **詳細整理記錄說明** 每一個步驟，若太精簡成績以50分 記。
+
+
+1. 關於連結檔案的建置行為: 
+    
+    * 在 /etc/hosts 檔案，請找出
+        
+        * 該檔案的 inode 號碼為幾號？
+        
+        * 這個 inode 共有幾個檔名在使用？
+    
+    * 建立實體連結，原始檔案為 /etc/hosts 而新的檔案檔名為 /srv/hosts.hard，請找出
+        
+        * /srv/hosts.hard的 inode 號碼為幾號？
+        
+        * 這個 inode 共有幾個檔名在使用？
+
+        * 說明原因。
+
+    * 建立符號連結，原始檔案為 /etc/hosts 而新的檔案檔名為 /srv/hosts.soft，請找出
+    
+        * /srv/hosts.soft的 inode 號碼為幾號？
+        
+        * 這個 inode 共有幾個檔名在使用
+
+        * 說明原因
+
+2. 請依據底下的說明，新增所需的硬碟與分割區後，建立好所需要的檔案系統(使用 UUID 來掛載。)，且都要能夠開機後自動的掛載。
+
+    容量      | 檔案系統  | 掛載點
+    ----------|----------|------
+    2GB|            XFS  |/data/xfs
+    1GB|            VFAT |/data/vfat
+    1GB|            EXT4 |/data/ext4
+    1GB|            swap |/data/swap
+
 
 ## HW4: Deadline: 2018/10/30 23:59 
 
 *注意:* 請依[Git繳交作業流程](#Git繳交作業流程), 唯一不同處是作業2用HW-2的地方在作業4改用HW-4分支
 
+*注意:* 題目已修改完成，都是10/24的進度內容。
 
 *注意:* 以Markdown 格式 **詳細整理記錄說明** 每一個步驟，若太精簡成績以50分 記。
 
@@ -24,15 +69,10 @@
 
         * 雖然 nogroup 群組內的用戶對於 /srv/myproject 應該沒有任何權限，但當 nogroup 內的用戶執行 /usr/local/bin/myls 時，可以產生與 ls 相同的資訊，且暫時擁有 mygroup 群組的權限，因此可以查詢到 /srv/myproject 目錄內的檔名資訊。 也就是說，當你使用 nouser1 的身分執行【myls /srv/myproject】時，應該是能夠查閱到該目錄內的檔名資訊。
 
-    * 復制/usr/bin/less至/usr/local/bin/myless後，完成下列操作
-
-        * 讓一般用戶執行 /usr/local/bin/myless 產生與 less 相同的結果。此外，只有 mygroup 的群組內用戶可以執行，其他人不能執行，同時 myuser1 等人執行 myless 時，執行過程中會暫時擁有 root 的權限。
-
-    * 建立一個名為 /srv/nogroup 的空白檔案，這個檔案可以讓 nouser1, nouser2, nouser3 讀、寫，但全部的人都不能執行。而 myuser1, myuser2, myuser3 只能讀不能寫入。
 
 2. 使用程序觀察的指令，搭配 grep 的關鍵字查詢功能，將找到的 rsyslog 相關的程序的 PID, PRI, NI, COMMAND 等資訊轉存到 /root/process_syslog.txt 檔案中。(搭配`>`重導向輸出)
 
-3. 使用 find 找出 /usr/bin 及 /usr/sbin 兩個目錄中，含有 SUID 或/及 SGID 的特殊檔案檔名，並使用 ls -l 去列出找到的檔案的相關權限後，將螢幕資料轉存到 /root/findsuidsgid.txt 檔案中。(自行查詢find指令用法，以及使透過重導向符號`>`輸出檔案)
+3. 使用 find 找出 /usr/bin 及 /usr/sbin 兩個目錄中，含有 SUID 的特殊檔案檔名，並使用 ls -l 去列出找到的檔案的相關權限後，將螢幕資料轉存到 /root/findsuidsgid.txt 檔案中。(自行查詢find指令用法，以及使透過重導向符號`>`輸出檔案)
 
 
 
