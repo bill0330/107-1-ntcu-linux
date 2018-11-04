@@ -1,37 +1,37 @@
-# 1</br>
-## «Ø¥ß¸s²Õ¦WºÙ¬°¡Gmygroup, nogroup</br>
-¥Î"groupadd (groupname)"«Ø¥ß·s¸s²Õ</br>
+## 1</br>
+### å»ºç«‹ç¾¤çµ„åç¨±ç‚ºï¼šmygroup, nogroup</br>
+ç”¨"groupadd (groupname)"å»ºç«‹æ–°ç¾¤çµ„</br>
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-4/ACS107137/img/1-1.PNG?raw=true)</br>
-## «Ø¥ß±b¸¹¦WºÙ¬°¡Gmyuser1, myuser2, myuser3 ¡A³q³q¥[¤J mygroup¡A¥B±K½X¬° MyPassWord</br>
-¥Î"useradd -g mygroup (username)"«Ø¥ß¤@­Ó¸s²Õ¬°mygroupªº¨Ï¥ÎªÌ</br>
+### å»ºç«‹å¸³è™Ÿåç¨±ç‚ºï¼šmyuser1, myuser2, myuser3 ï¼Œé€šé€šåŠ å…¥ mygroupï¼Œä¸”å¯†ç¢¼ç‚º MyPassWord</br>
+ç”¨"useradd -g mygroup (username)"å»ºç«‹ä¸€å€‹ç¾¤çµ„ç‚ºmygroupçš„ä½¿ç”¨è€…</br>
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-4/ACS107137/img/1-2.PNG?raw=true)</br>
-## «Ø¥ß±b¸¹¦WºÙ¬°¡Gnouser1, nouser2, nouser3 ¡A³q³q¥[¤J nogroup¡A¥B±K½X¬° MyPassWord</br>
-¥Î"useradd -g nogroup (username)"«Ø¥ß¤@­Ó¸s²Õ¬°nogroupªº¨Ï¥ÎªÌ</br>
+### å»ºç«‹å¸³è™Ÿåç¨±ç‚ºï¼šnouser1, nouser2, nouser3 ï¼Œé€šé€šåŠ å…¥ nogroupï¼Œä¸”å¯†ç¢¼ç‚º MyPassWord</br>
+ç”¨"useradd -g nogroup (username)"å»ºç«‹ä¸€å€‹ç¾¤çµ„ç‚ºnogroupçš„ä½¿ç”¨è€…</br>
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-4/ACS107137/img/1-3.PNG?raw=true)</br>
-## «Ø¥ß¤@­Ó¦W¬° /srv/myproject ªº¥Ø¿ı¡A³o­Ó¥Ø¿ı¥i¥HÅı mygroup ¸s²Õ¤ºªº¨Ï¥ÎªÌ§¹¾ã¨Ï¥Î¡A¥B¡i·s«ØªºÀÉ®×¾Ö¦³¸s²Õ¡j¬° mygroup ¡C(¤£¹L¨ä¥L¤H¤£¯à¦³¥ô¦óÅv­­)</br>
-¥Î"mkdir (¥Ø¿ı¦W)"«Ø¥ß¥Ø¿ı¡A¥Î"chmod"§ó§ïÅv­­¡A¥Î"chgrp"§ïÅÜ¸s²Õ¡A¦A¥Î"ll"¬d¬İ</br>
+### å»ºç«‹ä¸€å€‹åç‚º /srv/myproject çš„ç›®éŒ„ï¼Œé€™å€‹ç›®éŒ„å¯ä»¥è®“ mygroup ç¾¤çµ„å…§çš„ä½¿ç”¨è€…å®Œæ•´ä½¿ç”¨ï¼Œä¸”ã€æ–°å»ºçš„æª”æ¡ˆæ“æœ‰ç¾¤çµ„ã€‘ç‚º mygroup ã€‚(ä¸éå…¶ä»–äººä¸èƒ½æœ‰ä»»ä½•æ¬Šé™)</br>
+ç”¨"mkdir (ç›®éŒ„å)"å»ºç«‹ç›®éŒ„ï¼Œç”¨"chmod"æ›´æ”¹æ¬Šé™ï¼Œç”¨"chgrp"æ”¹è®Šç¾¤çµ„ï¼Œå†ç”¨"ll"æŸ¥çœ‹</br>
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-4/ACS107137/img/1-4.PNG?raw=true)</br>
-## ¼È®É¤Á´«¦¨¬° myuser1 ªº¨­¤À¡A¨Ã«e©¹ /srv/myproject ¥Ø¿ı¡A¹Á¸Õ«Ø¥ß¤@­Ó¦W¬° myuser1.data ªºÀÉ®×¡A¤§«áµn¥X myuser1</br>
-¥Î"su (username)"¤Á´«¨Ï¥ÎªÌ¡A"cd (¥Ø¿ı¦W)"«e©¹¸Ó¥Ø¿ı¡A"touch (ÀÉ®×¦W)"«Ø¥ßÀÉ®×¡A³Ì«á¥Î"exit"µn¥X±b¸¹</br>
+### æš«æ™‚åˆ‡æ›æˆç‚º myuser1 çš„èº«åˆ†ï¼Œä¸¦å‰å¾€ /srv/myproject ç›®éŒ„ï¼Œå˜—è©¦å»ºç«‹ä¸€å€‹åç‚º myuser1.data çš„æª”æ¡ˆï¼Œä¹‹å¾Œç™»å‡º myuser1</br>
+ç”¨"su (username)"åˆ‡æ›ä½¿ç”¨è€…ï¼Œ"cd (ç›®éŒ„å)"å‰å¾€è©²ç›®éŒ„ï¼Œ"touch (æª”æ¡ˆå)"å»ºç«‹æª”æ¡ˆï¼Œæœ€å¾Œç”¨"exit"ç™»å‡ºå¸³è™Ÿ</br>
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-4/ACS107137/img/1-5.PNG?raw=true)</br>
-## ½Æ»s/usr/bin/ls¦Ü/usr/local/bin/myls«á¡A§¹¦¨¤U¦C¾Ş§@</br>
-¥Î"cp -r A B"±NA§¹¥ş½Æ»s¨ìB¤W(-r¦³¥ş³¡½Æ»sªº¥\¯à)</br>
+### è¤‡è£½/usr/bin/lsè‡³/usr/local/bin/mylså¾Œï¼Œå®Œæˆä¸‹åˆ—æ“ä½œ</br>
+ç”¨"cp -r A B"å°‡Aå®Œå…¨è¤‡è£½åˆ°Bä¸Š(-ræœ‰å…¨éƒ¨è¤‡è£½çš„åŠŸèƒ½)</br>
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-4/ACS107137/img/1-6.PNG?raw=true)</br>
-## ÁöµM nogroup ¸s²Õ¤ºªº¥Î¤á¹ï©ó /srv/myproject À³¸Ó¨S¦³¥ô¦óÅv­­¡A¦ı·í nogroup ¤ºªº¥Î¤á°õ¦æ /usr/local/bin/myls ®É¡A¥i¥H²£¥Í»P ls ¬Û¦Pªº¸ê°T¡A¥B¼È®É¾Ö¦³ mygroup ¸s²ÕªºÅv­­¡A¦]¦¹¥i¥H¬d¸ß¨ì /srv/myproject ¥Ø¿ı¤ºªºÀÉ¦W¸ê°T¡C ¤]´N¬O»¡¡A·í§A¨Ï¥Î nouser1 ªº¨­¤À°õ¦æ¡imyls /srv/myproject¡j®É¡AÀ³¸Ó¬O¯à°÷¬d¾\¨ì¸Ó¥Ø¿ı¤ºªºÀÉ¦W¸ê°T¡C</br>
-¥Înouser1°õ¦æmyls /srv/myproject®É¡AµLªk¶}±ÒÀÉ®×(Åv­­¤£¨¬)</br>
+### é›–ç„¶ nogroup ç¾¤çµ„å…§çš„ç”¨æˆ¶å°æ–¼ /srv/myproject æ‡‰è©²æ²’æœ‰ä»»ä½•æ¬Šé™ï¼Œä½†ç•¶ nogroup å…§çš„ç”¨æˆ¶åŸ·è¡Œ /usr/local/bin/myls æ™‚ï¼Œå¯ä»¥ç”¢ç”Ÿèˆ‡ ls ç›¸åŒçš„è³‡è¨Šï¼Œä¸”æš«æ™‚æ“æœ‰ mygroup ç¾¤çµ„çš„æ¬Šé™ï¼Œå› æ­¤å¯ä»¥æŸ¥è©¢åˆ° /srv/myproject ç›®éŒ„å…§çš„æª”åè³‡è¨Šã€‚ ä¹Ÿå°±æ˜¯èªªï¼Œç•¶ä½ ä½¿ç”¨ nouser1 çš„èº«åˆ†åŸ·è¡Œã€myls /srv/myprojectã€‘æ™‚ï¼Œæ‡‰è©²æ˜¯èƒ½å¤ æŸ¥é–±åˆ°è©²ç›®éŒ„å…§çš„æª”åè³‡è¨Šã€‚</br>
+ç”¨nouser1åŸ·è¡Œmyls /srv/myprojectæ™‚ï¼Œç„¡æ³•é–‹å•Ÿæª”æ¡ˆ(æ¬Šé™ä¸è¶³)</br>
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-4/ACS107137/img/1-7.1.PNG?raw=true)</br>
-»İ­n¥Î"chmod u+s"µ¹¤©¨Ï¥ÎªÌSUIDªºÅv­­</br>
+éœ€è¦ç”¨"chmod u+s"çµ¦äºˆä½¿ç”¨è€…SUIDçš„æ¬Šé™</br>
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-4/ACS107137/img/1-7.2.PNG?raw=true)</br>
-# 2</br>
-## ¨Ï¥Îµ{§ÇÆ[¹îªº«ü¥O¡A·f°t grep ªºÃöÁä¦r¬d¸ß¥\¯à¡A±N§ä¨ìªº rsyslog ¬ÛÃöªºµ{§Çªº PID, PRI, NI, COMMAND µ¥¸ê°TÂà¦s¨ì /root/process_syslog.txt ÀÉ®×¤¤¡C(·f°t>­«¾É¦V¿é¥X)</br>
-¥Î"ps aux |grep rsyslog"Æ[¹î¨t²Î¥ş³¡µ{§Ç¡A¨Ã±N¦³rsyslogÃöÁä¦rªºµ{§Ç§ä¥X</br>
-¦A¥Î">"±N¸ê®Æ²¾Âà¨ì«ü©wÀÉ®×¡A³Ì«á·f°t"cat (ÀÉ®×¦W)"ÀËµøÀÉ®×¤º®e</br>
+## 2</br>
+### ä½¿ç”¨ç¨‹åºè§€å¯Ÿçš„æŒ‡ä»¤ï¼Œæ­é… grep çš„é—œéµå­—æŸ¥è©¢åŠŸèƒ½ï¼Œå°‡æ‰¾åˆ°çš„ rsyslog ç›¸é—œçš„ç¨‹åºçš„ PID, PRI, NI, COMMAND ç­‰è³‡è¨Šè½‰å­˜åˆ° /root/process_syslog.txt æª”æ¡ˆä¸­ã€‚(æ­é…>é‡å°å‘è¼¸å‡º)</br>
+ç”¨"ps aux |grep rsyslog"è§€å¯Ÿç³»çµ±å…¨éƒ¨ç¨‹åºï¼Œä¸¦å°‡æœ‰rsyslogé—œéµå­—çš„ç¨‹åºæ‰¾å‡º</br>
+å†ç”¨">"å°‡è³‡æ–™ç§»è½‰åˆ°æŒ‡å®šæª”æ¡ˆï¼Œæœ€å¾Œæ­é…"cat (æª”æ¡ˆå)"æª¢è¦–æª”æ¡ˆå…§å®¹</br>
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-4/ACS107137/img/2-1.PNG?raw=true)</br>
-# 3</br>
-## ¨Ï¥Î find §ä¥X /usr/bin ¤Î /usr/sbin ¨â­Ó¥Ø¿ı¤¤¡A§t¦³ SUID ªº¯S®íÀÉ®×ÀÉ¦W¡A¨Ã¨Ï¥Î ls -l ¥h¦C¥X§ä¨ìªºÀÉ®×ªº¬ÛÃöÅv­­«á¡A±N¿Ã¹õ¸ê®ÆÂà¦s¨ì /root/findsuidsgid.txt ÀÉ®×¤¤¡C(¦Û¦æ¬d¸ßfind«ü¥O¥Îªk¡A¥H¤Î¨Ï³z¹L­«¾É¦V²Å¸¹>¿é¥XÀÉ®×)</br>
-¥Î"find / -perm /u=s"¦C¥X¨t²Î¤¤©Ò¦³ SUID ªºÀÉ®×¡A¨Ã¦b«á­±¥[¤J"-exec ls -l {} \\;"§ä¨ìÀÉ®×¬ÛÃöÅv­­</br>
-¨Ã¥Î">"±N¸ê®Æ²¾Âà</br>
-**ªşµù:** "-exec"¥i¥HÅı·j´M¥X¨Óªºµ²ªG¡A¨Ï¥Î¨ä¥Lªº«ü¥O¶i¦æ«áÄòªº³B²z°Ê§@</br>
+## 3</br>
+### ä½¿ç”¨ find æ‰¾å‡º /usr/bin åŠ /usr/sbin å…©å€‹ç›®éŒ„ä¸­ï¼Œå«æœ‰ SUID çš„ç‰¹æ®Šæª”æ¡ˆæª”åï¼Œä¸¦ä½¿ç”¨ ls -l å»åˆ—å‡ºæ‰¾åˆ°çš„æª”æ¡ˆçš„ç›¸é—œæ¬Šé™å¾Œï¼Œå°‡è¢å¹•è³‡æ–™è½‰å­˜åˆ° /root/findsuidsgid.txt æª”æ¡ˆä¸­ã€‚(è‡ªè¡ŒæŸ¥è©¢findæŒ‡ä»¤ç”¨æ³•ï¼Œä»¥åŠä½¿é€éé‡å°å‘ç¬¦è™Ÿ>è¼¸å‡ºæª”æ¡ˆ)</br>
+ç”¨"find / -perm /u=s"åˆ—å‡ºç³»çµ±ä¸­æ‰€æœ‰ SUID çš„æª”æ¡ˆï¼Œä¸¦åœ¨å¾Œé¢åŠ å…¥"-exec ls -l {} \\;"æ‰¾åˆ°æª”æ¡ˆç›¸é—œæ¬Šé™</br>
+ä¸¦ç”¨">"å°‡è³‡æ–™ç§»è½‰</br>
+**é™„è¨»:** "-exec"å¯ä»¥è®“æœå°‹å‡ºä¾†çš„çµæœï¼Œä½¿ç”¨å…¶ä»–çš„æŒ‡ä»¤é€²è¡Œå¾ŒçºŒçš„è™•ç†å‹•ä½œ</br>
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-4/ACS107137/img/3-1.1.PNG?raw=true)</br>
-¥Î"cat (ÀÉ®×¦W)"ÀËµøÀÉ®×¤º®e</br>
+ç”¨"cat (æª”æ¡ˆå)"æª¢è¦–æª”æ¡ˆå…§å®¹</br>
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-4/ACS107137/img/3-1.2.PNG?raw=true)</br>
