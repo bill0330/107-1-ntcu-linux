@@ -2,7 +2,110 @@
 
 *公告:* 
 
-請同學至[作業成績](https://github.com/ogre0403/107-1-ntcu-linux/tree/score)確認自己的作業成績，若HW-1沒有成績(0分)，請至[HW-1 分支](https://github.com/ogre0403/107-1-ntcu-linux/tree/HW-1)確認是否有你的作業，若HW-2沒有成績，請至[HW-2分支](https://github.com/ogre0403/107-1-ntcu-linux/tree/HW-2)確認是否有你的作業，之後的作業依此類推。有些同學作業送到錯分支，一樣以0分記，請重新送一次。
+1. 請同學至[成績](https://github.com/ogre0403/107-1-ntcu-linux/tree/score)確認自己的期中成績，
+
+
+## HW10: Deadline: 2019/1/8 23:59
+
+*注意:* 請依[Git繳交作業流程](#Git繳交作業流程), 唯一不同處是作業2用HW-2的地方在作業10改用HW-10分支
+
+1. 請仿照課堂上練習，透過systemd管理二個sshd服務，並讓第二個sshd服務的 port 放行於 2222。完成後可以使用指令 `netstat -alntp | grep ssh` 確認是否啟動二個sshd服務，範例如下：
+
+```sh
+$ netstat -alntp | grep ssh
+tcp        0      0 0.0.0.0:22     0.0.0.0:*     LISTEN      1300/sshd
+tcp        0      0 0.0.0.0:2222   0.0.0.0:*     LISTEN      15275/sshd
+tcp6       0      0 :::22          :::*          LISTEN      1300/sshd
+tcp6       0      0 :::2222        :::*          LISTEN      15275/sshd
+```
+
+    Note 1: CentOS有使用SELinux ，故預設只允許 SSH 使用埠號 22，若要使用埠號 2222，使請用下列指開啟並檢查
+
+    ```sh
+    $ semanage port -a -t ssh_port_t -p tcp 2222
+    $ semanage port -l | grep ssh
+    ssh_port_t tcp 2202, 22
+    ```  
+
+    Note 2: CentOS預設的防火牆firewalld會禁止訪問埠號2222，若要透過2222埠連ssh，請先關閉firewalld。
+
+## HW9: Deadline: 2019/1/1 23:59
+
+*注意:* 請依[Git繳交作業流程](#Git繳交作業流程), 唯一不同處是作業2用HW-2的地方在作業9改用HW-9分支
+
+1. yum 是透過設定檔的規範去找到安裝/升級伺服器，預設的 CentOS 7 的設定檔的檔名為 /etc/yum.repos.d/CentOS-Base.repo。Red Hat 提供了 EPEL 的計畫，提供額外打包好的軟體，提供給用戶使用。但這些軟體並非官網提供， 因此其軟體庫並沒有在預設的設定檔內。
+
+    * 請閱讀 https://www.cyberciti.biz/faq/installing-rhel-epel-repo-on-centos-redhat-7-x/ 後，依照其作法，啟用epel repoisitory，並安裝`htop`
+
+## HW8: Deadline: 2018/12/18 23:59
+
+*注意:* 請依[Git繳交作業流程](#Git繳交作業流程), 唯一不同處是作業2用HW-2的地方在作業7改用HW-8分支
+
+1. 請依說明完成下列操作讓虛擬機器彼此間能夠透過網路相互溝通：
+
+    * 在VirtalBox內建立一個新的Host-only 網路卡，網段為`192.168.100.1/24`
+
+    * 建立虛擬機器-1，並啟用host-only網路卡，透過`ifconfig` 或 `ip`指令，設定虛擬機器-1的網路為`192.168.100.100/24`
+
+    * 建立虛擬機器-2，並啟用host-only網路卡，透過`ifconfig` 或 `ip`指令，設定虛擬機器-2的網路為`192.168.100.200/24`
+
+    * 將二台虛擬機器的網路設定存至`/etc/sysconfig/network-scripts/`下相對應的`ifcfg-*`檔案，重新啟動虛擬機器，確認網路ip設定無誤。
+
+    * 從虛擬機器-1 ping 虛擬機器-2確認網路是連通，並從虛擬機器-2 ping 虛擬機器-1，確認網路也是連通。
+
+
+
+## HW7: Deadline: 2018/12/4 23:59
+
+*注意:* 請依[Git繳交作業流程](#Git繳交作業流程), 唯一不同處是作業2用HW-2的地方在作業7改用HW-7分支
+
+1. [apache log](https://raw.githubusercontent.com/ogre0403/107-1-ntcu-linux/master/resource/web.log)是apache web server的日誌檔
+
+    * 請查詢 `curl` 或 `wget` 的用法後，用其中一個指令下載此日誌檔。
+
+    * 使用bash的pipe指令，例如`grep`、`cat`...等等，將此日誌中error發生的原因輸出至螢幕，但其他資訊不需要呈現。
+
+2. `tar`是linux下用來打包壓縮目錄的工具，請自行查詢`tar`的用法後，用`一般使用者`身份打包並壓縮`/var`目錄。在`tar`執行過程中，忽略正常輸出結果，但需將錯誤訊息輸出至`tar-err.log`檔案。
+
+
+## HW6: Deadline: 2018/11/27 23:59
+
+*注意:* 請依[Git繳交作業流程](#Git繳交作業流程), 唯一不同處是作業2用HW-2的地方在作業6改用HW-6分支
+
+*注意:* HW-6之後遲交以及線上繳交不合規定有錯，一率不接受補交。
+
+1. 依下列描述完成並說明各項問題：
+
+    * 請在家目錄下的`.bashrc`裡新增一個shell變數 `HOSTS_PATH=/etc/hosts`，(注意不需用export)，說明如何不登出讓`HOSTS_PATH`變數生效，執行`cat $HOST_PATH`確認有讀取到檔案內容。
+
+    * 在C語言程式可以用`getenv()`讀取LINUX的環境變數，範例程式如下。請在Linux裡編譯此範例程式並執行，請問否有讀到`HOSTS_PATH`以及`$?`的值為何，請說明。也許需透過`yum groupinstall "Development Tools"`安裝gcc。
+
+        ```c
+        #include <stdio.h>
+        #include <stdlib.h>
+        int main()
+        {
+            const char* s = getenv("HOSTS_PATH");
+            if(s == NULL){
+                printf("getenv() return NULL\n");
+                return 1;
+            }
+            
+            printf("HOSTS_PATH :%s\n",(s!=NULL)? s : "getenv returned NULL");
+            printf("\n %s content is: \n", s);
+
+            int c;
+            FILE *file;
+            file = fopen(s, "r");
+            if (file) {
+                while ((c = getc(file)) != EOF)
+                        putchar(c);
+                fclose(file);
+            }
+        }
+        ```
+
+    * 在`.bashrc`裡要如何修正，讓C語言程式可以讀到環境變數並將檔案內容顯示。
 
 ## HW5: Deadline: 2018/11/6 23:59
 
@@ -34,15 +137,6 @@
         * 這個 inode 共有幾個檔名在使用
 
         * 說明原因
-
-2. 請依據底下的說明，新增所需的硬碟與分割區後，建立好所需要的檔案系統(使用 UUID 來掛載。)，且都要能夠開機後自動的掛載。
-
-    容量      | 檔案系統  | 掛載點
-    ----------|----------|------
-    2GB|            XFS  |/data/xfs
-    1GB|            VFAT |/data/vfat
-    1GB|            EXT4 |/data/ext4
-    1GB|            swap |/data/swap
 
 
 ## HW4: Deadline: 2018/10/30 23:59 
